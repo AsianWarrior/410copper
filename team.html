@@ -1,143 +1,164 @@
 <!DOCTYPE html>
-<html lang ="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title> Fall 2023 - CS410 Team Copper - Percuss At Sight </title>
-</head>
-
+<title>Percuss At Sight</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: navy;
-	    color : white;
-            margin: 0;
-            padding: 0;
-        }
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
-        header {
-            background-color: gold;
-            color: navy;
-            text-align: center;
-            padding: 20px;
-        }
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
 
-        h1, h2, h3 {
-            color: gold;
-            text-align: center;
-	    text-decoration: underline;
-        }
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("Prototype_1_.jpg");
+  min-height: 100%;
+}
 
-	.team-container {
-		text-align: center;
-	}
-
-	.team-row {
-		display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .team-member {
-            text-align: center;
-            margin: 20px;
-            width: 200px;
-        }
-
-        .team-member h3 {
-            font-size: 18px;
-            margin: 10px 0;
-        }
-
-        .team-member p {
-            font-size: 14px;
-            line-height: 1.5;
-        }
-
-	.topnav {
-	    background-color: gold;
-	    font-size: 16px;
-	    overflow: hidden;
-	}
-	
-	.topnav a {
-	    float: left;
-	    text-align: center;
-	    padding: 16px 16px;
-	    text-decoration: none;
-	    
-	}
-
-	.topnav a:hover {
-	    background-color: navy;
-	    color: gold;
-	}
-    </style>
-
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+</head>
 <body>
-        <div class="topnav">
-            <!-- <a class="active" href="index.html">Home</a>
-            <a href="team.html">Team</a> -->
-	    <a href="index.html"> Home </a>
-	    <a href="team.html"> Team </a>
-	    <a href="presentation.html">Presentation</a>
-	    <a href="solution.html">Solution</a>
-            <a href="problem.html">Problem</a>
-	    <a href="deliverables.html">Deliverables</a>
- 	    <a href="references.html">References</a>
-        </div>
-	<h1>Percuss At Sight</h1>
-	<h2>Team Copper</h2>
-	<h3>Fall 23 - CS 410</h3>
 
-        <h2>Team Members</h2>
-	<div class="team container">
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="index.html" class="w3-bar-item w3-button w3-wide">
+      <img src="PercussAtSight_Logo.png" alt="Percuss At Sight" style="width: 125px; height: 25px;"></a>
+      
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+      <a href="team.html" class="w3-bar-item w3-button"></i> TEAM</a>
+      <a href="#problem" class="w3-bar-item w3-button"></i> PROBLEM</a>
+      <a href="#solution" class="w3-bar-item w3-button"></i> SOLUTION</a>
+      <a href="#presentation" class="w3-bar-item w3-button"></i> PRESENTATION</a>
+      <a href="#deliverables" class="w3-bar-item w3-button"></i> DELIVERABLES</a>
+      <a href="#labs" class="w3-bar-item w3-button"></i> LABS</a>
+      <a href="#references " class="w3-bar-item w3-button"></i> REFERENCES</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
-	<div class="team-row">
-        <div class="team-member">
-            <img src="bio_pics/jeremy.png" alt="Jeremy Sloan" loading="lazy" width="100" height="100">
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+  <a href="#problem" onclick="w3_close()" class="w3-bar-item w3-button">PROBLEM</a>
+  <a href="#solution" onclick="w3_close()" class="w3-bar-item w3-button">SOLUTION</a>
+  <a href="#presentation" onclick="w3_close()" class="w3-bar-item w3-button">PRESENTATION</a>
+  <a href="#deliverables" onclick="w3_close()" class="w3-bar-item w3-button">DELIVERABLES</a>
+  <a href="#labs" onclick="w3_close()" class="w3-bar-item w3-button">LABS</a>
+  <a href="#references" onclick="w3_close()" class="w3-bar-item w3-button">REFERENCES</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small">
+      <img src="PercussAtSight_Logo.png" alt="Percuss At Sight" style="width: 800px; height: 250px;"> 
+      </span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">
+      <img src="PercussAtSight_Logo.png" alt="Percuss At Sight" style="width: 800px; height: 250px;"> 
+      </span><br>
+    <span class="w3-large">CS 410 - Team Copper</span>
+    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more</a></p>
+  </div> 
+</header>
+
+<!-- Team Section -->
+<div class="w3-container" style="padding:100px 16px" id="team">
+    <h3 class="w3-center">THE TEAM</h3>
+  
+    <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="jeremy.png" alt="Jeremy Sloan" style="width:100%; height: 375px;">
+          <div class="w3-container">
             <h3>Jeremy Sloan</h3>
-            <p>
-            Jeremy is a senior at ODU majoring in Computer Science and Music.  He’s from Norfolk, Virginia and loves sports and video games.
-	    </p>
+            <p class="w3-opacity">Project Lead</p>
+            <p>Jeremy is a senior at ODU majoring in Computer Science and Music.  He’s from Norfolk, Virginia and loves sports and video games.</p>
+          </div>
         </div>
-
-        <div class="team-member">
-            <img src="bio_pics/deven.png" alt="Deven Bhaggan" loading="lazy" width="100" height="100">
+      </div>
+  
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="deven.png" alt="Deven Bhaggan" style="width:100%; height: 375px;">
+          <div class="w3-container">
             <h3>Deven Bhaggan</h3>
-            <p>
-	    Deven is a senior at ODU majoring in computer science. He is from Northern Virginia and works as a basketball trainer and coach. In his free time, he loves going to the gym and playing video games.
-	    </p>
+            <p class="w3-opacity">Website Lead</p>
+            <p>Deven is a senior at ODU majoring in computer science. 
+              He is from Northern Virginia and works as a basketball trainer and coach. In his free time, he loves going to the gym and playing video games.</p>
+          </div>
         </div>
-
-        <div class="team-member">
-            <img src="bio_pics/ismail.png" alt="Ismail Ismail" loading="lazy" width="100" height="100">
-            <h3>Ismail Ismail</h3>
-            <p>Ismail is...</p>
-        </div>
-	</div>
-
-	<div class="team-row">
-        <div class="team-member">
-            <img src="bio_pics/simeon.jpg" alt="Simeon Wafula" loading="lazy" width="100" height="100">
-            <h3>Simeon Wafula</h3>
-            <p>Simeon is...</p>
-        </div>
-
-        <div class="team-member">
-            <img src="bio_pics/chris.png" alt="Chris Magushak" loading="lazy" width="100" height="100">
-            <h3>Chris Maguschak</h3>
-            <p>Chris is...</p>
-        </div>
-
-        <div class="team-member">
-            <img src="bio_pics/phat_nguyen.png" alt="Phat Nguyen" loading="lazy" width="100" height="100">
+      </div>
+  
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="phat_nguyen.png" alt="Mike" style="width:100%; height: 375px;">
+          <div class="w3-container">
             <h3>Phat Nguyen</h3>
-            <p>
-		Phat is a senior at ODU majoring in computer science. He is from Hampton, Virginia and works part time as a student worker for root@cs.odu.edu. As of now he enjoys listening to a variety of music, playing video games, and doing calisthenics.
-	    </p>
+            <p class="w3-opacity">Back-End Specialist</p>
+            <p>Phat is a senior at ODU majoring in computer science. He is from Hampton, Virginia and works part time as a student worker for root@cs.odu.edu. 
+              As of now he enjoys listening to a variety of music, playing video games, and doing calisthenics.</p>
+          </div>
         </div>
-     </div>
- </div>
-</body>
-</html>
+      </div>
+  
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="/w3images/team4.jpg" alt="Dan" style="width:100%; height: 300px;">
+          <div class="w3-container">
+            <h3>Dan Star</h3>
+            <p class="w3-opacity">Designer</p>
+            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="/w3images/team4.jpg" alt="Dan" style="width:100%; height: 400px;">
+          <div class="w3-container">
+            <h3>Dan Star</h3>
+            <p class="w3-opacity">Designer</p>
+            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="/w3images/team4.jpg" alt="Dan" style="width:100%; height: 400px;">
+          <div class="w3-container">
+            <h3>Dan Star</h3>
+            <p class="w3-opacity">Designer</p>
+            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  </div>
