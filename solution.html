@@ -1,38 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
-    <style>
-        .topnav {
-            background-color: gold;
-            font-size: 16px;
-            overflow: hidden;
-        }
+<html>
+<head>
+<title>The Solution</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
-        .topnav a {
-            float: left;
-            text-align: center;
-            padding: 16px 16px;
-            text-decoration: none;
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
 
-        }
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("Prototype_1_.jpg");
+  min-height: 100%;
+}
 
-        .topnav a:hover {
-            background-color: navy;
-            color: gold;
-        }
-    </style>
-    <head>
-    </head>
-    <body>
-	<div class="topnav">
-	    <!-- <a class="active" href="index.html">Home</a>
-            <a href="team.html">Team</a> -->
-            <a href="index.html"> Home </a>
-            <a href="team.html"> Team </a>
-            <a href="presentation.html">Presentation</a>
-            <a href="solution.html">Solution</a>
-            <a href="problem.html">Problem</a>
-            <a href="deliverables.html">Deliverables</a>
-            <a href="references.html">References</a>
-        </div>
-    </body>
-</html>
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="index.html" class="w3-bar-item w3-button w3-wide">
+      <img src="PercussAtSight_Logo.png" alt="Percuss At Sight" style="width: 125px; height: 25px;"></a>
+      
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+      <a href="team.html" class="w3-bar-item w3-button"></i> TEAM</a>
+      <a href="problem.html" class="w3-bar-item w3-button"></i> PROBLEM</a>
+      <a href="solution.html" class="w3-bar-item w3-button"></i> SOLUTION</a>
+      <a href="#presentation" class="w3-bar-item w3-button"></i> PRESENTATION</a>
+      <a href="#deliverables" class="w3-bar-item w3-button"></i> DELIVERABLES</a>
+      <a href="#labs" class="w3-bar-item w3-button"></i> LABS</a>
+      <a href="#references " class="w3-bar-item w3-button"></i> REFERENCES</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
+  <a href="team.html" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+  <a href="problem.html" onclick="w3_close()" class="w3-bar-item w3-button">PROBLEM</a>
+  <a href="solution.html" onclick="w3_close()" class="w3-bar-item w3-button">SOLUTION</a>
+  <a href="#presentation" onclick="w3_close()" class="w3-bar-item w3-button">PRESENTATION</a>
+  <a href="#deliverables" onclick="w3_close()" class="w3-bar-item w3-button">DELIVERABLES</a>
+  <a href="#labs" onclick="w3_close()" class="w3-bar-item w3-button">LABS</a>
+  <a href="#references" onclick="w3_close()" class="w3-bar-item w3-button">REFERENCES</a>
+</nav>
