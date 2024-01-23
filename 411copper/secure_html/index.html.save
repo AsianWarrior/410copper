@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0>
+	<title> Fall 2023 - CS410 Team Copper - Percuss At Sight </title>
+</head>
+
+<style>
+        
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #006699;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .team-member {
+            margin: 20px;
+            display: inline-block;
+            vertical-align: top;
+            width: 200px;
+        }
+
+        .team-member img {
+            width: 100%;
+            max-width: 150px;
+            border-radius: 50%;
+        }
+</style>
+<body>
+    <section>
+        <h2>Team Members</h2>
+        <div class="team-member">
+            <!-- <img src="jeremy.jpg" alt="Jeremy Sloan"> -->
+            <h3>Jeremy Sloan</h3>
+            <p>Jeremy is...</p>
+        </div>
+
+        <div class="team-member">
+            <!-- <img src="deven.jpg" alt="Deven Bhaggan"> -->
+            <h3>Deven Bhaggan</h3>
+            <p>Deven is...</p>
+        </div>
+
+        <div class="team-member">
+            <!-- img src="ismail.jpg" alt="Ismail Ismail"> -->
+            <h3>Ismail Ismail</h3>
+            <p>Ismail is...</p>
+        </div>
+
+        <div class="team-member">
+            <!-- <img src="simeon.jpg" alt="Simeon Wafula"> -->
+            <h3>Simeon Wafula</h3>
+            <p>Simeon is...</p>
+        </div>
+
+        <div class="team-member">
+            <!-- <img src="chris.jpg" alt="Chris Maguschak"> -->
+            <h3>Chris Maguschak</h3>
+            <p>Chris is...</p>
+        </div>
+
+        <div class="team-member">
+            <!-- <img src="phat.jpg" alt="Phat Nguyen"> -->
+            <h3>Phat Nguyen</h3>
+            <p>Phat is...</p>
+        </div>
+    </section>
+</body>
+</html>
